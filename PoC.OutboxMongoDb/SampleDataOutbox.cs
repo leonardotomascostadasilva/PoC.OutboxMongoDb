@@ -15,7 +15,7 @@ namespace PoC.OutboxMongoDb
                 CancellationToken = stoppingToken
             };
 
-            Parallel.For(0, 100_000, parallelOptions, i =>
+            Parallel.For(0, 19_000_000, parallelOptions, i =>
             {
                 var outboxMessage = new OutboxMessage
                 {

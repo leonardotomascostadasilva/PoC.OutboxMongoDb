@@ -2,9 +2,9 @@ using MongoDB.Driver;
 using PoC.OutboxMongoDb;
 
 var builder = Host.CreateApplicationBuilder(args);
-// builder.Services.AddHostedService<ProcessOutboxWorker>();
+builder.Services.AddHostedService<ProcessOutboxWorker>();
 //builder.Services.AddHostedService<SampleDataOutbox>();
-builder.Services.AddHostedService<OutboxMessageSchemes>();
+//builder.Services.AddHostedService<OutboxMessageSchemes>();
 
 builder.Services.AddSingleton<IMongoClient>(e =>
 {
