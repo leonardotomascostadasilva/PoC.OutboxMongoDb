@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Api/Api.csproj" Id="7a24c1e2-2df0-49ac-bae7-5bdb55f72bb8" />
   <Project Path="PoC.OutboxMongoDb/PoC.OutboxMongoDb.csproj" />
+  <Project Path="Worker/Worker.csproj" Id="4a85b79a-6769-4382-8219-881c01817ffc" />
 </Solution>
